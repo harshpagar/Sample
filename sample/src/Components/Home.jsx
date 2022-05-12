@@ -13,7 +13,7 @@ const user = () =>
 {
     if(userlogin == null)
     {
-        Nav("/login");
+        Nav("/signup");
     }
     else
     {     
@@ -33,7 +33,7 @@ const user = () =>
                 </span>
             </div>  
         </div>
-       
+        <h1>Home Page</h1>
         </>
     )
 }

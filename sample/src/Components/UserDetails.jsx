@@ -13,7 +13,7 @@ export const UserDetails = () =>
     {
         localStorage.removeItem("harshlogin");
         alert("Logout Successfull")
-        navigate("/")        
+        navigate("/login")        
     }
 
     return(

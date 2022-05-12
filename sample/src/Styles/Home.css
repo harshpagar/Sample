@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    background-color: rgb(175, 237, 212);
+    height: 100px;
+  }
+  .admin{
+    margin-left:350px;
+    height: 100px;
+  }
