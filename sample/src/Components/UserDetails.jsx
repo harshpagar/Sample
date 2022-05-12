@@ -1,17 +1,17 @@
 import { useNavigate } from 'react-router-dom';
-    
+import '../styles/User.css';
 import Button from '@mui/material/Button';
 
 
 
 export const UserDetails = () =>
 {
-    const userlogin =  JSON.parse(localStorage.getItem("datalogin"))
+    const userlogin =  JSON.parse(localStorage.getItem("harshlogin"))
     const navigate = useNavigate()
 
     const logout = () =>
     {
-        localStorage.removeItem("datalogin");
+        localStorage.removeItem("harshlogin");
         alert("Logout Successfull")
         navigate("/")        
     }
@@ -29,7 +29,7 @@ export const UserDetails = () =>
                     LogOut
             </Button> 
             </div><br />
-         
+           
         </>
     )
 }

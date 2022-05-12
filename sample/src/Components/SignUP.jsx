@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-
 export const SignUp = () => 
 {
     const [username,setUserame]=useState("")
@@ -25,7 +24,7 @@ export const SignUp = () =>
         "mobileno": mobileno,
     }
 
-    var userdata = JSON.parse(localStorage.getItem("data") || "[]");
+    var userdata = JSON.parse(localStorage.getItem("harsh") || "[]");
     var c = 0;
     for(var i=0;i<userdata.length;i++)
     {
@@ -38,7 +37,7 @@ export const SignUp = () =>
     if(c === 0)
     {
         userdata.push(user);
-        localStorage.setItem("data",JSON.stringify(userdata));
+        localStorage.setItem("harsh",JSON.stringify(userdata));
         alert("Signup Successfull..")
         navigate("/login");
     }
@@ -49,6 +48,7 @@ export const SignUp = () =>
 
   return (
     <>
+        
 
     <div>
         <br />

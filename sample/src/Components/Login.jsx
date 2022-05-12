@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-
 export const Login = () => 
 {
    
@@ -16,8 +15,8 @@ export const Login = () =>
     const [password,setPassword]=useState("");
     const navigate = useNavigate();    
 
-    const data = JSON.parse(localStorage.getItem("data"))
-    var ulogin = JSON.parse(localStorage.getItem("datalogin") || "[]");
+    const data = JSON.parse(localStorage.getItem("harsh"))
+    var ulogin = JSON.parse(localStorage.getItem("harshlogin") || "[]");
 
 
     console.log(data)
@@ -35,7 +34,7 @@ export const Login = () =>
                 c++;   
 
                 ulogin.push(data[i]);
-                localStorage.setItem("data",JSON.stringify(ulogin));
+                localStorage.setItem("harshlogin",JSON.stringify(ulogin));
                 
                 navigate("/");
             }
@@ -66,7 +65,9 @@ export const Login = () =>
             
                   
           
-                <Button  type="submit"  variant="outlined" style={{marginTop:"40px", color: "white",backgroundColor: "black",width:360,marginBottom:"15px"}} onClick={() => navigate("/userdetails")  }  >
+                <Button  type="submit"  variant="outlined" style={{marginTop:"40px", color: "white",backgroundColor: "black",width:360,marginBottom:"15px"}}
+               
+                >
                     Login
                 </Button>  
                 </form>
